@@ -5,4 +5,10 @@
     border: 1px solid black;
 }
 
+.star1{
+
+}
+.star1:hover{
+    background-color: yellow;
+}
 
