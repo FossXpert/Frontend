@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const broderr = 'border border-solid border-black'
+const broderr = 'border border-solid'
 
 
 const StarRating = () => {
@@ -16,12 +16,12 @@ const StarRating = () => {
         arr.map((value,index) => (
           <button key={index} 
           className={`flex m-2 ${broderr}`}
-          onMouseOver={() => setHover(value)}
-          onMouseLeave={() => setHover(0)}
           onClick={()=>setRating(value)}
+          onMouseOver={() => setHover(value)}
+          onMouseLeave={() => setHover(rating)}
           >
-            {hover}
-            <span className={`${rating <= hover ? 'text-yellow-500' : ''}`}>
+            {/* {rating} */}
+            <span className={`${value <= ((rating && hover) || hover) ? 'text-yellow-500' : ''}`}>
               &#9733;
             </span>
           </button>
