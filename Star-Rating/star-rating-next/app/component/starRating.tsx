@@ -16,13 +16,16 @@ const StarRating = () => {
         arr.map((value,index) => (
           <button key={index} 
           className={`flex m-2 ${broderr}`}
-          onClick={()=>setRating(value)}
-          onMouseOver={() => setHover(value)}
+          onClick={()=>setRating(index+1)}
+          onMouseOver={() => setHover(index+1)}
           onMouseLeave={() => setHover(rating)}
           >
             {/* {rating} */}
-            <span className={`${value <= ((rating && hover) || hover) ? 'text-yellow-500' : ''}`}>
+            <span className={`${ index+1 <= ((rating && hover) || hover) ? 'text-yellow-500' : '' }`}>
               &#9733;
+              {rating}
+              {hover}
+              {index+1}
             </span>
           </button>
         ))
