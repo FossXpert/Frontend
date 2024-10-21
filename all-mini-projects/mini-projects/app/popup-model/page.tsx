@@ -6,8 +6,7 @@ import PopupModel from '../components/PopupModel/PopupModel'
 const page = () => {
   return (
     <div>
-        <div>Popup Model</div>
-        <PopupModel/>
+         <PopupModel/>
     </div>
   )
 }
