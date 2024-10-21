@@ -4,8 +4,6 @@ export default function Home() {
   return (
     <>
       <div>
-        <Link href={'/star-rating'}>
-        </Link>
       </div>
     </>
   );
