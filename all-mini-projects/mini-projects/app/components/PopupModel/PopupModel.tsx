@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Model from './Model';
 
-
 const borderr = 'border border-solid border-black'
 
 
@@ -21,7 +20,7 @@ const PopupModel = () => {
 
         { 
           showModel && 
-          <Model/> 
+          <Model showModel={showModel} setShowModel={setShowModel}/> 
         }
       </div>
     </>
