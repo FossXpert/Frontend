@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Model from './Model';
 
 
-const borderr = 'border border-solid border-black'
+// const borderr = 'border border-solid border-black'
 
 
 const PopupModel = () => {
