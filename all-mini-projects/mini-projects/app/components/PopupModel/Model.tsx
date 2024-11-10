@@ -1,5 +1,5 @@
 import { X,Download } from "lucide-react"
-import { FC } from "react"
+import { FC, useRef } from "react"
 
 type Props={
     showModel:boolean,
@@ -10,8 +10,10 @@ const borderr = ''
 
 const Model:FC<Props> = ({setShowModel}) => {
 
+    const modelRef = useRef(null);
+
     return (
-        <div className={`inset-0 fixed flex flex-col justify-center items-center ${borderr} bg-opacity-30 bg-black backdrop-blur-sm`}>
+        <div ref={modelRef} className={`inset-0 fixed flex flex-col justify-center items-center ${borderr} bg-opacity-30 bg-black backdrop-blur-sm`}>
             <div className={`flex flex-col`}>
                 <button onClick={()=>setShowModel(false)} className={`place-self-end mb-2`}><X size={25}/></button>
                 <div className={`rounded-[10px] bg-indigo-500 px-20 py-10 flex flex-col gap-5 justify-center items-center`}>
