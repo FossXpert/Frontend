@@ -8,7 +8,7 @@ type Props={
 
 const borderr = ''
 
-const Model:FC<Props> = ({showModel,setShowModel}) => {
+const Model:FC<Props> = ({setShowModel}) => {
 
     return (
         <div className={`inset-0 fixed flex flex-col justify-center items-center ${borderr} bg-opacity-30 bg-black backdrop-blur-sm`}>
