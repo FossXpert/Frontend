@@ -11,11 +11,12 @@ const borderr = ''
 const Model: FC<Props> = ({ setShowModel }) => {
 
     const modelRef = useRef(null);
-    console.log(modelRef);
+    console.log(modelRef.current);
 
     function modalClose(e: React.MouseEvent<HTMLDivElement>) {
         if (e.target === modelRef.current) {
-            setShowModel(false)
+            setShowModel(false); 
+            console.log(e.target)
         }
     }
 
