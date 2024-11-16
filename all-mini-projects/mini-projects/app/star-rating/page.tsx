@@ -1,6 +1,6 @@
 'use client'
 import React, {  } from 'react'
-import StarRating from '../components/Star-Rating/StarRating'
+import StarRating from '../components/StarRating/StarRating'
 
 
 const page = () => {
