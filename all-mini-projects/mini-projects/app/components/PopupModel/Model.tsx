@@ -1,25 +1,35 @@
-import { X,Download } from "lucide-react"
-import { FC } from "react"
+import { X, Download } from "lucide-react"
+import { FC, useRef } from "react"
 
-type Props={
-    showModel:boolean,
-    setShowModel:(showModel:boolean)=>void
+type Props = {
+    showModel: boolean,
+    setShowModel: (showModel: boolean) => void
 }
 
 const borderr = ''
 
-const Model:FC<Props> = ({showModel,setShowModel}) => {
+const Model: FC<Props> = ({ setShowModel }) => {
+
+    const modelRef = useRef(null);
+    console.log(modelRef.current);
+
+    function modalClose(e: React.MouseEvent<HTMLDivElement>) {
+        if (e.target === modelRef.current) {
+            setShowModel(false); 
+            console.log(e.target)
+        }
+    }
 
     return (
-        <div className={`inset-0 fixed flex flex-col justify-center items-center ${borderr} bg-opacity-30 bg-black backdrop-blur-sm`}>
+        <div ref={modelRef} onClick={(e) => modalClose(e)} className={`inset-0 fixed flex flex-col justify-center items-center ${borderr} bg-opacity-30 bg-black backdrop-blur-sm`}>
             <div className={`flex flex-col`}>
-                <button onClick={()=>setShowModel(false)} className={`place-self-end mb-2`}><X size={25}/></button>
+                <button onClick={() => setShowModel(false)} className={`place-self-end mb-2`}><X size={25} /></button>
                 <div className={`rounded-[10px] bg-indigo-500 px-20 py-10 flex flex-col gap-5 justify-center items-center`}>
                     <h1 className={`text-3xl font-extrabold ${borderr}`}>Download Free Ebook</h1>
                     <p className={`m-0 p-0 font-bold text-center max-w-[400px] ${borderr}`}>Want to learn how to crack web-development interviews</p>
                     <form className="flex flex-col gap-2">
-                        <input className={`p-2 rounded-[5px]`} type='email' placeholder="Enter Email Id" required/>
-                        <button className={`flex rounded-[5px] bg-black gap-2 items-center justify-center py-2 ${borderr}`}><Download size={15}/>Download Ebook</button>
+                        <input className={`p-2 rounded-[5px]`} type='email' placeholder="Enter Email Id" required />
+                        <button className={`flex rounded-[5px] bg-black gap-2 items-center justify-center py-2 ${borderr}`}><Download size={15} />Download Ebook</button>
                     </form>
                 </div>
             </div>
