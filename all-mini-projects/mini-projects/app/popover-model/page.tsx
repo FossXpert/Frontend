@@ -1,5 +1,5 @@
+'use client'
 import PopoverModel from "../components/PopoverModel/PopoverModel"
-
 
 const page = () => {
     return (
