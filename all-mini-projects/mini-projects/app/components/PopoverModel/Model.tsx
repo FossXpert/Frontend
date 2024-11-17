@@ -4,9 +4,9 @@ import React from 'react'
  
 const Model = () => {
   return (
-    <div className={`flex flex-col justify-center items-center bg-opacity-30 bg-black backdrop-blur-sm`}>
+    <div className={`inset-0 fixed flex flex-col justify-center items-center bg-opacity-30 bg-black backdrop-blur-sm`}>
         <div className={``}>
-            
+
         </div>
     </div>
   )
