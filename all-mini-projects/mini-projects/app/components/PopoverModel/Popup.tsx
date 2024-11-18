@@ -1,8 +1,7 @@
 import React from 'react'
 
-type Props = {}
-
-const Popup = (props: Props) => {
+ 
+const Popup = () => {
   return (
     <div>Popup</div>
   )
