@@ -1,10 +1,11 @@
 import { useState } from "react";
 import Model from "./Model";
+import Popup from "./Popup";
 
 const PopoverModel = () => {
 
     const [showModel,setShowModel] = useState(false);
-    const [popup,setPopup] = useState(false);
+    const [popup,setPopup] = useState(true);
     
     
     return (
