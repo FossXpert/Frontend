@@ -1,14 +1,22 @@
 import Link from "next/link";
 
 export default function Home() {
+  const arraysOfLinks = [{
+    url : [
+      'star-rating','popup-model','popover-model','accordion'
+    ],
+    title : [
+      'Star Rating','Popup Model','Popover Model','Accordion'
+    ]
+  }]
   return (
     <>
-      <div className="flex flex-col h-[100vh]">
-        <Link href={'/star-rating'}>Star Rating</Link>
-        <Link href={'/popup-model'}>Popup Model</Link>
-        <Link href={'/popover-model'}>Popover Model</Link>
-      </div>
-      <div>
+      <div className="flex justify-center items-center font-bold text-xl h-[100vh]">
+        {
+          arraysOfLinks.map((value, index) => (
+              
+          ))
+        }
       </div>
     </>
   );
