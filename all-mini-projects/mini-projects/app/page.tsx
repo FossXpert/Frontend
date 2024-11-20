@@ -7,14 +7,14 @@ export default function Home() {
     ],
     title : [
       'Star Rating','Popup Model','Popover Model','Accordion'
-    ]
-  }]
+    ]}
+  ]
   return (
     <>
       <div className="flex justify-center items-center font-bold text-xl h-[100vh]">
         {
           arraysOfLinks.map((value, index) => (
-              
+            
           ))
         }
       </div>
