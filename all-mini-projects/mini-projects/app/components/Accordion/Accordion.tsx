@@ -29,7 +29,7 @@ const Accordion = () => {
   const [isExpand,setIsExpand] = useState(Array(faq.length).fill(false));
   console.log(isExpand)
 
-  const handleToggle = (index:any) => {
+  const handleToggle = (index:number) => {
     const old = [...isExpand];
     old[index] = !old[index];
     setIsExpand(old);
