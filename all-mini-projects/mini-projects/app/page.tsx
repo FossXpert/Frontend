@@ -6,7 +6,8 @@ export default function Home() {
     {url : 'star-rating',text:'Star Rating'},
     {url : 'popup-model',text:'Popup Model'},
     {url : 'popover-model',text:'Popover Model'},
-    {url : 'accordion',text:'Accordion'}
+    {url : 'accordion',text:'Accordion'},
+    {url : 'carousel',text:'Carousel'}
   ]
   return (
     <>
