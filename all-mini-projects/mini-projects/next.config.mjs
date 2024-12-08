@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    images:{
+        domains : ['blog-card-gfe.vercel.app']
+    }
+};
+
 
 export default nextConfig;
