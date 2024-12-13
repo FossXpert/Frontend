@@ -20,7 +20,7 @@ const Card:FC<Props> = ({image,heading,paragraph,num}) => {
             <div className='card-bottom flex flex-col p-2'>
                 <p className='text-2xl font-bold'>{heading} : {num}</p>
                 <p className=''>{paragraph}</p>
-            </div>
+            </div> 
         </div>
   )
 }
