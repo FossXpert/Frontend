@@ -36,7 +36,14 @@ body{
     margin: 14px 0 40px;
 }
 .message-button{
-    font-size: medium;
+    font-size: 1.05rem;
     font-weight: 500;
-    padding: 14px 12px;
+    padding: 10px 10px;
+    border-radius: 8px;
+    border : 2px solid rgb(255,255,255,0.2);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.message-button:hover{
+    background-color: violet;
 }
