@@ -1,54 +1,80 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-
-body{
+body {
+    font-family: Arial, sans-serif;
     display: flex;
-    justify-content: center;
-    min-height: 100vh;
-    background: url("https://sprl.in/hUsJq45") #eff0fc no-repeat;
-    background-size: cover;
-}
-.card-list{
-    display: flex;
-    width: 100vw;
-}
-.card-item{
-    display:flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 2%;
-    width: 350px;
-    padding: 35px;
-    color: black; 
-    background-color:rgba(255, 255,255,0.2);
-    border: 1px solid black;
-    backdrop-filter: blur(30px);
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
 }
-.user-image{
+
+.container {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+.card-list {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 10px;
+}
+
+.card-item {
+    min-width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-item img {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    width: 170px;
-    height: 170px;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
 }
-.user-profession{
-    font-size: 1.15rem;
-    font-weight: 400;
-    margin: 14px 0 40px;
+
+.user-profession {
+    color: #777;
 }
-.message-button{
-    font-size: 1.05rem;
-    font-weight: 500;
-    padding: 10px 10px;
-    border-radius: 8px;
-    border : 2px solid rgb(255,255,255,0.2);
+
+.message-button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
 }
-.message-button:hover{
-    background-color: violet;
-    outline: none;
-}  
+
+.message-button:hover {
+    background-color: #0056b3;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+    border-radius: 50%;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
