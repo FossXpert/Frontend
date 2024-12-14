@@ -8,16 +8,20 @@ body{
     display: flex;
     justify-content: center;
     min-height: 100vh;
-    background: url("https://sprl.in/nfAqYwA") #eff0fc no-repeat center;
+    background: url("https://sprl.in/hUsJq45") #eff0fc no-repeat;
+    background-size: cover;
 }
-
+.card-list{
+    display: flex;
+    width: 100vw;
+}
 .card-item{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 8%;
-    width: 400px;
+    border-radius: 2%;
+    width: 350px;
     padding: 35px;
     color: black; 
     background-color:rgba(255, 255,255,0.2);
@@ -26,8 +30,8 @@ body{
 }
 .user-image{
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
     margin-bottom: 1rem;
 }
 .user-profession{
@@ -46,4 +50,5 @@ body{
 }
 .message-button:hover{
     background-color: violet;
-}
+    outline: none;
+}  
