@@ -4,7 +4,7 @@ const carousel = document.getElementById('carousel');
 
 let currentScroll = 0;
 
-const scrollAmount = 310; // Adjust based on card width + gap
+const scrollAmount = 350; // Adjust based on card width + gap
 
 prevBtn.addEventListener('click', () => {
     currentScroll -= scrollAmount;
