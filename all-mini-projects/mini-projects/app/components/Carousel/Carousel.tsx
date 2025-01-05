@@ -25,7 +25,7 @@ const Carousel:FC<Props> = ({image,heading,paragraph}) => {
   const btnPressNext = () => {
       if(cardContainerRef.current){
         const width = cardContainerRef.current.clientWidth;
-        console.log(width)
+        console.log(width)cashka
         cardContainerRef.current.scrollBy({left:width , behavior:'smooth'});
       }
   }
